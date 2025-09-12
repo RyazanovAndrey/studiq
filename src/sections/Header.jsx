@@ -23,7 +23,7 @@ const Header = () => {
         <header className={`fixed w-full py-5 top-0 left-0 z-50 border-b-1 border-gray-300  ${isScroll ? 'bg-white shadow-md ' : ''}`}>
             <div className="container mx-auto px-3 flex justify-between">
                 <div className="flex items-center gap-x-20">
-                    <div className="text-2xl font-bold">Stud<span className='text-accent'>IQ</span> </div>
+                    <div className="text-2xl font-bold font-title">Stud<span className='text-accent'>IQ</span> </div>
                     <div className="flex gap-x-10">
                         {navLinks.map(item => {
                             const isActive = item.href == location
