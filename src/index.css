@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unbounded:wght@200..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #0B6ECB;
+  --color-light: #F1F8FD;
+  --color-text: #242e46;
+  --color-white: white;
+  --color-black: black;
+
+  --font-main: 'Inter';
+  --font-title: 'Unbounded'
+}
+
+body {
+    font-family: var(--font-main), serif;
+    color: var(--color-text);
+}
