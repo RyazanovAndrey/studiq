@@ -1,4 +1,4 @@
-import { BookOpen } from 'lucide-react'
+import { BookOpen, GraduationCap } from 'lucide-react'
 import React from 'react'
 import Button from '../components/Button'
 import DescTitle from '../components/DescTitle'
@@ -11,16 +11,21 @@ const HomePage = () => {
         { image: <MessageCircleMore size={48} strokeWidth={1} />, title: 'Language Learning', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, vitae.' },
         { image: <PaintbrushVertical size={48} strokeWidth={1} />, title: 'Creative Arts & Design', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, vitae.' },
         { image: <HeartPlus size={48} strokeWidth={1} />, title: 'Health & Fitness', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, vitae.' },
+        { image: <GraduationCap size={48} strokeWidth={1} />, title: 'Individual Teacher', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, vitae.' },
     ]
 
     return (
         <>
-            <section className='relative min-h-[700px] bg-[url(/images/hero-bg.png)] bg-cover flex items-center circle line'>
+            <section className='relative min-h-[800px] bg-[url(/images/hero-bg.png)] bg-cover flex items-center'>
+                <img src="/public/images/element-01.png" alt="" className='absolute top-[20%] left-[10%] circle' />
+                <img src="/public/images/element-02.png" alt="" className='absolute top-[40%] left-[10%] line' width={70} />
+                <img src="/public/images/element-06.png" alt="" className='absolute top-[20%] right-[20%] line' width={100} />
+                <img src="/public/images/element-03.png" alt="" className='absolute bottom-0 right-[10%] z-40 triangle' />
+                <img src="/public/images/element-04.png" alt="" className='absolute bottom-30 right-20 z-40 triangle triangle' />
                 <div className="container mx-auto px-3 flex justify-center">
                     <div className="w-5xl text-center space-y-5 z-10">
                         <DescTitle position={'justify-center'}>Your Future, Achieve Success</DescTitle>
-                        <h1 className='text-5xl font-bold'>Find Your <span className='text-[#25BA4D]'>Ideal</span> Course, Build</h1>
-                        <span className='text-[#D5810F] text-5xl font-bold'>Skills</span>
+                        <h1 className='text-7xl font-bold font-title'>Find Your <span className='text-[#25BA4D]'>Ideal</span> Course, Build<br /><span className='text-[#D5810F] '> Skills</span></h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, vitae.</p>
                         <div className="flex justify-center">
                             <div className="flex gap-x-3">
@@ -29,10 +34,12 @@ const HomePage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="absolute bottom-0 left-0 bg-[url(/images/cloud-shap-img1.png)] w-full h-[300px] z-0"></div>
+                    <div className="absolute bottom-0 left-0 bg-[url(/images/cloud-shap-img1.png)] w-full h-[300px] z-0">
+                    </div>
                 </div>
             </section>
             <section className='relative pt-30 pb-60 z-30'>
+                <img src="/public/images/element-01.png" alt="" className='absolute top-[20%] left-[5%] circle' />
                 <div className="container mx-auto px-3 grid grid-cols-2 gap-x-10 items-center bg-white">
                     <div className="space-y-6 z-10">
                         <DescTitle position={'justify-start'} >About StudIQ</DescTitle>
@@ -69,10 +76,12 @@ const HomePage = () => {
                 <div className="absolute bottom-0 left-0 bg-[url(/images/cloud-shap-img2.png)] w-full h-[300px] z-0"></div>
             </section>
             <section className='relative bg-[#F1F8FD] pt-60 pb-60 -mt-40 z-20'>
+                <img src="/public/images/element-06.png" alt="" className='absolute top-[20%] right-[20%] line' width={120} />
+                <img src="/public/images/element-03.png" alt="" className='absolute bottom-0 right-[10%] z-40 triangle' />
                 <div className="container mx-auto px-3">
                     <h2 className='text-2xl font-bold'>Explore 5,000+ Free Online Courses For Students</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non enim fugiat praesentium at unde? Harum itaque blanditiis cupiditate libero exercitationem?</p>
-                    <div className="relative grid grid-cols-3 gap-x-5 mt-10 z-50">
+                    <div className="relative grid grid-cols-4 gap-x-5 mt-10 z-50">
                         {exploreList.map(item => (
                             <div className='bg-white rounded-2xl cursor-pointer group overflow-hidden shadow-lg/10'>
                                 <div className="group-hover:bg-accent p-5 space-y-5 transition-all">
