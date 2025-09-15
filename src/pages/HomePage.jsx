@@ -1,18 +1,33 @@
-import { BookOpen, GraduationCap } from 'lucide-react'
-import React from 'react'
+import { GraduationCap, ThumbsUp, Users, UserStar, Video } from 'lucide-react'
 import Button from '../components/Button'
 import DescTitle from '../components/DescTitle'
 import { HeartPlus, MessageCircleMore, PaintbrushVertical } from "lucide-react"
-
+import { Link } from 'react-router'
+import { useState } from 'react'
+import CoursesCard from '../components/CoursesCard'
+import CoursesData from '../dataCourses.json'
 
 const HomePage = () => {
 
+    const [tabsCoursesSort, setTabsCoursesSort] = useState('All')
+
+    console.log(CoursesData.Courses)
+
     const exploreList = [
-        { image: <MessageCircleMore size={48} strokeWidth={1} />, title: 'Language Learning', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, vitae.' },
-        { image: <PaintbrushVertical size={48} strokeWidth={1} />, title: 'Creative Arts & Design', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, vitae.' },
-        { image: <HeartPlus size={48} strokeWidth={1} />, title: 'Health & Fitness', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, vitae.' },
-        { image: <GraduationCap size={48} strokeWidth={1} />, title: 'Individual Teacher', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, vitae.' },
+        { image: <MessageCircleMore size={48} strokeWidth={1.5} />, title: 'Language Learning', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, vitae.' },
+        { image: <PaintbrushVertical size={48} strokeWidth={1.5} />, title: 'Creative Arts & Design', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, vitae.' },
+        { image: <HeartPlus size={48} strokeWidth={1.5} />, title: 'Health & Fitness', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, vitae.' },
+        { image: <GraduationCap size={48} strokeWidth={1.5} />, title: 'Individual Teacher', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, vitae.' },
     ]
+
+    const dataList = [
+        { image: <Users color='#B58B77' size={36} strokeWidth={1.5} />, title: '1.4K', desc: 'Successfully', color: 'card-orange' },
+        { image: <Video color='#C8DEF3' size={36} strokeWidth={1.5} />, title: '2k', desc: 'Courses Completed', color: 'card-blue' },
+        { image: <ThumbsUp color='#B58B77' size={36} strokeWidth={1.5} />, title: '2.5K', desc: 'Satisfaction Rate', color: 'card-orange ' },
+        { image: <UserStar color='#C8DEF3' size={36} strokeWidth={1.5} />, title: '5K', desc: 'Students Communyty', color: 'card-blue' },
+    ]
+
+    const tabsCourses = ['All', 'Marketing', 'Academic', 'WebDesign', 'Programming', 'Design']
 
     return (
         <>
@@ -94,6 +109,39 @@ const HomePage = () => {
                     </div>
                 </div>
                 <div className="absolute bottom-0 left-0 bg-[url(/images/cloud-shap-img1.png)] w-full h-[300px] z-0"></div>
+            </section>
+            <section className='relative pt-30 pb-80'>
+                <div className="container mx-auto px-3">
+                    <div className="grid grid-cols-4 gap-x-5">
+                        {dataList.map(item => (
+                            <div className={`${item.color} space-y-3 cursor-pointer group`}>
+                                <div className="relative top-0 p-2 rounded-full bg-white size-16 grid place-items-center group-hover:-top-1 transition-all">{item.image}</div>
+                                <div className="text-2xl font-bold">{item.title}</div>
+                                <div className="">{item.desc}</div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div className="absolute bottom-0 left-0 bg-[url(/images/cloud-shap-img2.png)] w-full h-[300px] z-0"></div>
+            </section>
+            <section className='bg-[#F1F8FD] -mt-40 min-h-[600px] py-50'>
+                <div className="container mx-auto px-3">
+                    <div className="grid grid-cols-2 gap-x-10">
+                        <h2 className='text-2xl font-bold'>Explore 4,000+ Free Online Courses <br /> For Students</h2>
+                        <div className="">
+                            <p>Welcome to our diverse and dynamic course catalog we`re dedicated to providing you</p>
+                            <Link className='text-accent'>See All Courses</Link>
+                        </div>
+                    </div>
+                    <div className="bg-white mt-5 rounded-2xl flex p-5 gap-x-3">
+                        {tabsCourses.map(item => {
+                            return <p onClick={() => setTabsCoursesSort(item)} className={`cursor-pointer bg-[#F3F7FD] p-3 rounded-full px-6 ${tabsCoursesSort == item ? 'bg-accent text-white' : ''}`}>{item}</p>
+                        })}
+                    </div>
+                    <div className="grid grid-cols-4 gap-x-5 mt-5">
+                      
+                    </div>
+                </div>
             </section>
         </>
     )

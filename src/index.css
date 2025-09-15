@@ -30,6 +30,31 @@ body {
   animation: goRight 20s infinite linear;
 }
 
+
+/* Color for card */
+
+.card-orange {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F9F2EF;
+  border-radius: 20px;
+  padding: 20px;
+
+}
+
+.card-blue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F0F4FC;
+  border-radius: 20px;
+  padding: 20px;
+
+}
+
+/* --------------- */
+
 @keyframes rotateAll {
   0% {
     transform: rotate(0deg);
