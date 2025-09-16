@@ -4,10 +4,10 @@
 
 @theme {
   --color-accent: #0B6ECB;
-  --color-light: #F1F8FD;
   --color-text: #242e46;
   --color-white: white;
   --color-black: black;
+  --color-bg-section: #F1F8FD;
 
   --font-main: 'Inter';
   --font-title: 'Kanit'
@@ -53,7 +53,21 @@ body {
 
 }
 
-/* --------------- */
+/* Button style  */
+
+.fill-btn {
+  @apply bg-accent text-white py-3 px-5 rounded-full flex gap-x-2 cursor-pointer hover:bg-black transition-all items-center
+}
+
+.border-brn {
+  @apply py-3 px-5 border border-accent text-accent rounded-full flex gap-x-2 cursor-pointer items-center hover:bg-[#D5810F] hover:text-white hover:border-[#D5810F] transition-all
+}
+
+.link-btn {
+  @apply text-accent flex gap-x-2 items-center cursor-pointer hover:underline
+}
+
+/* Animation items */
 
 @keyframes rotateAll {
   0% {

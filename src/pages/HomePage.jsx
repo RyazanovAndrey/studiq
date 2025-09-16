@@ -1,17 +1,33 @@
-import { GraduationCap, ThumbsUp, Users, UserStar, Video } from 'lucide-react'
+import { CheckCheck, GraduationCap, ThumbsUp, Users, UserStar, Video } from 'lucide-react'
 import Button from '../components/Button'
 import DescTitle from '../components/DescTitle'
 import { HeartPlus, MessageCircleMore, PaintbrushVertical } from "lucide-react"
 import { Link } from 'react-router'
 import { useState } from 'react'
-import CoursesCard from '../components/CoursesCard'
 import CoursesData from '../dataCourses.json'
+import CardCourses from '../components/CardCourses'
+import { blogList } from '../data.js'
+import BlogCard from '../components/BlogCard'
 
 const HomePage = () => {
 
     const [tabsCoursesSort, setTabsCoursesSort] = useState('All')
 
-    console.log(CoursesData.Courses)
+    const getData = () => {
+        if(tabsCoursesSort == 'All') {
+            return Object.keys(CoursesData.Courses).flatMap(item => {
+                if(item == 'Marketing') {
+                    return CoursesData.Courses[item]
+                }
+
+                return CoursesData.Courses[item]
+            })
+        }
+
+        return CoursesData.Courses[tabsCoursesSort]
+    }
+
+    const sortList = getData()
 
     const exploreList = [
         { image: <MessageCircleMore size={48} strokeWidth={1.5} />, title: 'Language Learning', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, vitae.' },
@@ -44,16 +60,14 @@ const HomePage = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, vitae.</p>
                         <div className="flex justify-center">
                             <div className="flex gap-x-3">
-                                <Button variant={'fill'}>Get start today</Button>
-                                <Button>Get start today</Button>
+                                <Button variant={'fill'} arrow={true}>Get start today</Button>
+                                <Button variant={'border'} arrow={true}>Get start today</Button>
                             </div>
                         </div>
                     </div>
-                    <div className="absolute bottom-0 left-0 bg-[url(/images/cloud-shap-img1.png)] w-full h-[300px] z-0">
-                    </div>
                 </div>
             </section>
-            <section className='relative pt-30 pb-60 z-30'>
+            <section className='relative'>
                 <img src="/public/images/element-01.png" alt="" className='absolute top-[20%] left-[5%] circle' />
                 <div className="container mx-auto px-3 grid grid-cols-2 gap-x-10 items-center bg-white">
                     <div className="space-y-6 z-10">
@@ -82,15 +96,14 @@ const HomePage = () => {
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab excepturi velit deleniti ipsum error ad! Voluptatibus repudiandae facere nisi ullam?</p>
                             </div>
                         </div>
-                        <Button variant={'fill'}>Read More</Button>
+                        <Button variant={'fill'} arrow={true} >Read More</Button>
                     </div>
                     <div className="">
                         <img src="/images/about-image.jpg" alt="" />
                     </div>
                 </div>
-                <div className="absolute bottom-0 left-0 bg-[url(/images/cloud-shap-img2.png)] w-full h-[300px] z-0"></div>
             </section>
-            <section className='relative bg-[#F1F8FD] pt-60 pb-60 -mt-40 z-20'>
+            <section className='relative bg-[#F1F8FD]'>
                 <img src="/public/images/element-06.png" alt="" className='absolute top-[20%] right-[20%] line' width={120} />
                 <img src="/public/images/element-03.png" alt="" className='absolute bottom-0 right-[10%] z-40 triangle' />
                 <div className="container mx-auto px-3">
@@ -108,9 +121,8 @@ const HomePage = () => {
                         ))}
                     </div>
                 </div>
-                <div className="absolute bottom-0 left-0 bg-[url(/images/cloud-shap-img1.png)] w-full h-[300px] z-0"></div>
             </section>
-            <section className='relative pt-30 pb-80'>
+            <section className='relative'>
                 <div className="container mx-auto px-3">
                     <div className="grid grid-cols-4 gap-x-5">
                         {dataList.map(item => (
@@ -122,9 +134,8 @@ const HomePage = () => {
                         ))}
                     </div>
                 </div>
-                <div className="absolute bottom-0 left-0 bg-[url(/images/cloud-shap-img2.png)] w-full h-[300px] z-0"></div>
             </section>
-            <section className='bg-[#F1F8FD] -mt-40 min-h-[600px] py-50'>
+            <section className='relative bg-[#F1F8FD]'>
                 <div className="container mx-auto px-3">
                     <div className="grid grid-cols-2 gap-x-10">
                         <h2 className='text-2xl font-bold'>Explore 4,000+ Free Online Courses <br /> For Students</h2>
@@ -138,9 +149,49 @@ const HomePage = () => {
                             return <p onClick={() => setTabsCoursesSort(item)} className={`cursor-pointer bg-[#F3F7FD] p-3 rounded-full px-6 ${tabsCoursesSort == item ? 'bg-accent text-white' : ''}`}>{item}</p>
                         })}
                     </div>
-                    <div className="grid grid-cols-4 gap-x-5 mt-5">
-                      
+                    <div className="relative grid grid-cols-4 gap-x-5 mt-5 z-40">
+                      {sortList.slice(0, 4).map(item => {
+                        return <CardCourses {...item} />
+                      })}
                     </div>
+                </div>
+            </section>
+            <section className=''>
+                <div className="container mx-auto px-3">
+                    <div className="grid grid-cols-2 gap-x-10">
+                        <img src="/public/images/why-choose-us-image.jpg" alt="" width={650} />
+                        <div className="flex items-center">
+                            <div className="space-y-5">
+                                <DescTitle>Why Choose Us</DescTitle>
+                                <h2 className='text-2xl font-bold'>Our Commitment to Excellence, Learn, Grow</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam expedita numquam unde inventore corporis consequatur dicta asperiores reiciendis ea aspernatur!</p>
+                                <div className="flex gap-x-5">
+                                    <CheckCheck color='#0B6ECB' />
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, itaque.</p>
+                                </div>
+                                <div className="flex gap-x-5">
+                                    <CheckCheck color='#0B6ECB' />
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, itaque.</p>
+                                </div>
+                                <div className="flex gap-x-5">
+                                    <CheckCheck color='#0B6ECB' />
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, itaque.</p>
+                                </div>
+                                <Button variant={'fill'} arrow={true}>Read more</Button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className='bg-bg-section'>
+                <div className="container mx-auto px-3">
+                      <DescTitle position={'justify-center'}>Articles</DescTitle>
+                      <h2 className='text-2xl font-bold text-center'>Recent Articles For Students</h2>
+                      <div className="grid grid-cols-4 gap-x-5">
+                        {blogList.map(item => (
+                            <BlogCard {...item} />
+                        ))}
+                      </div>
                 </div>
             </section>
         </>

@@ -8,10 +8,10 @@
                 "rating": 4.6, 
                 "reviews": "4.5k",
                 "instructor": "Sophia",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 199,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/marketing-course-image-01.jpg"
+                "CourseImage": "marketing-course-image-01.jpg"
             },
             {
                 "title": "SEO Mastery Course",
@@ -20,10 +20,10 @@
                 "rating": 4.8,
                 "reviews": "6.3k",
                 "instructor": "David",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 249,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/marketing-course-image-02.jpg"
+                "CourseImage": "marketing-course-image-02.jpg"
             },
             {
                 "title": "Social Media Marketing Strategy",
@@ -32,10 +32,10 @@
                 "rating": 4.7,
                 "reviews": "5.8k",
                 "instructor": "Emily",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 179,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/marketing-course-image-03.jpg"
+                "CourseImage": "marketing-course-image-03.jpg"
             },
             {
                 "title": "Google Ads & PPC Training",
@@ -44,10 +44,10 @@
                 "rating": 4.9,
                 "reviews": "3.2k",
                 "instructor": "Michael",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 299,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/marketing-course-image-04.jpg"
+                "CourseImage": "marketing-course-image-04.jpg"
             },
             {
                 "title": "Content Marketing & Blogging",
@@ -56,10 +56,10 @@
                 "rating": 4.5,
                 "reviews": "2.9k",
                 "instructor": "Anika",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 159,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/marketing-course-image-05.jpg"
+                "CourseImage": "marketing-course-image-05.jpg"
             }
         ],
         "Academic": [
@@ -70,10 +70,10 @@
                 "rating": 4.7,
                 "reviews": "6.4k",
                 "instructor": "AnikaZ",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 148,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/academic-course-image-01.jpg"
+                "CourseImage": "academic-course-image-01.jpg"
             },
             {
                 "title": "Business Communication Skills",
@@ -82,10 +82,10 @@
                 "rating": 4.6,
                 "reviews": "4.8k",
                 "instructor": "James",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 199,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/academic-course-image-02.jpg"
+                "CourseImage": "academic-course-image-02.jpg"
             },
             {
                 "title": "Research & Writing Skills",
@@ -94,10 +94,10 @@
                 "rating": 4.5,
                 "reviews": "3.1k",
                 "instructor": "Sophia",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 129,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/academic-course-image-03.jpg"
+                "CourseImage": "academic-course-image-03.jpg"
             },
             {
                 "title": "Critical Thinking & Problem Solving",
@@ -106,10 +106,10 @@
                 "rating": 4.8,
                 "reviews": "5.2k",
                 "instructor": "Ethan",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 179,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/academic-course-image-04.jpg"
+                "CourseImage": "academic-course-image-04.jpg"
             },
             {
                 "title": "Public Speaking & Presentation",
@@ -118,10 +118,10 @@
                 "rating": 4.7,
                 "reviews": "2.4k",
                 "instructor": "Olivia",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 139,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/academic-course-image-05.jpg"
+                "CourseImage": "academic-course-image-05.jpg"
             }
         ],
         "WebDesign": [
@@ -132,10 +132,10 @@
                 "rating": 4.7,
                 "reviews": "5.6k",
                 "instructor": "Daniel",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 199,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/webdesign-course-image-01.jpg"
+                "CourseImage": "webdesign-course-image-01.jpg"
             },
             {
                 "title": "Responsive Web Design",
@@ -144,10 +144,10 @@
                 "rating": 4.8,
                 "reviews": "7.3k",
                 "instructor": "Sophia",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 249,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/webdesign-course-image-02.jpg"
+                "CourseImage": "webdesign-course-image-02.jpg"
             },
             {
                 "title": "JavaScript for Web Designers",
@@ -156,10 +156,10 @@
                 "rating": 4.6,
                 "reviews": "4.1k",
                 "instructor": "Michael",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 229,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/webdesign-course-image-03.jpg"
+                "CourseImage": "webdesign-course-image-03.jpg"
             },
             {
                 "title": "UI/UX Design Basics",
@@ -168,10 +168,10 @@
                 "rating": 4.9,
                 "reviews": "6.7k",
                 "instructor": "Emily",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 299,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/webdesign-course-image-04.jpg"
+                "CourseImage": "webdesign-course-image-04.jpg"
             },
             {
                 "title": "Web Accessibility & Standards",
@@ -180,10 +180,10 @@
                 "rating": 4.5,
                 "reviews": "2.6k",
                 "instructor": "Liam",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 179,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/webdesign-course-image-05.jpg"
+                "CourseImage": "webdesign-course-image-05.jpg"
             }
         ],
         "Programming": [
@@ -194,10 +194,10 @@
                 "rating": 4.7,
                 "reviews": "6.4k",
                 "instructor": "Wade",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 499,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/programming-course-image-01.jpg"
+                "CourseImage": "programming-course-image-01.jpg"
             },
             {
                 "title": "Java for Beginners",
@@ -206,10 +206,10 @@
                 "rating": 4.8,
                 "reviews": "7.2k",
                 "instructor": "Sophia",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 399,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/programming-course-image-02.jpg"
+                "CourseImage": "programming-course-image-02.jpg"
             },
             {
                 "title": "C++ Programming Essentials",
@@ -218,10 +218,10 @@
                 "rating": 4.6,
                 "reviews": "5.3k",
                 "instructor": "Michael",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 349,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/programming-course-image-03.jpg"
+                "CourseImage": "programming-course-image-03.jpg"
             },
             {
                 "title": "JavaScript Full Course",
@@ -230,10 +230,10 @@
                 "rating": 4.9,
                 "reviews": "8.1k",
                 "instructor": "Emily",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 599,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/programming-course-image-04.jpg"
+                "CourseImage": "programming-course-image-04.jpg"
             },
             {
                 "title": "Data Structures & Algorithms",
@@ -242,10 +242,10 @@
                 "rating": 4.8,
                 "reviews": "9.4k",
                 "instructor": "Ethan",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 699,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/programming-course-image-05.jpg"
+                "CourseImage": "programming-course-image-05.jpg"
             }
         ],
         "Design": [
@@ -256,10 +256,10 @@
                 "rating": 4.7,
                 "reviews": "3.5k",
                 "instructor": "Sophia",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 457,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/design-course-image-01.jpg"
+                "CourseImage": "design-course-image-01.jpg"
             },
             {
                 "title": "Graphic Design Fundamentals",
@@ -268,10 +268,10 @@
                 "rating": 4.8,
                 "reviews": "6.9k",
                 "instructor": "Daniel",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 299,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/design-course-image-02.jpg"
+                "CourseImage": "design-course-image-02.jpg"
             },
             {
                 "title": "Adobe Photoshop Mastery",
@@ -280,10 +280,10 @@
                 "rating": 4.6,
                 "reviews": "5.2k",
                 "instructor": "Michael",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 399,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/design-course-image-03.jpg"
+                "CourseImage": "design-course-image-03.jpg"
             },
             {
                 "title": "Illustrator & Logo Design",
@@ -292,10 +292,10 @@
                 "rating": 4.9,
                 "reviews": "7.1k",
                 "instructor": "Emily",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 449,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/design-course-image-04.png"
+                "CourseImage": "design-course-image-04.png"
             },
             {
                 "title": "3D Modeling for Beginners",
@@ -304,10 +304,10 @@
                 "rating": 4.7,
                 "reviews": "4.6k",
                 "instructor": "Liam",
-                "InstructorImage": "Images/course-user.jpg",
+                "InstructorImage": "course-user.jpg",
                 "price": 499,
                 "enrollLink": "Enroll Now",
-                "CourseImage": "Images/design-course-image-05.jpg"
+                "CourseImage": "design-course-image-05.jpg"
             }
         ]
     }
