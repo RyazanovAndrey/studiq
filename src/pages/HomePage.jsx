@@ -1,4 +1,4 @@
-import { CheckCheck, GraduationCap, ThumbsUp, Users, UserStar, Video } from 'lucide-react'
+import { BookOpen, CheckCheck, GraduationCap, ThumbsUp, Users, UserStar, Video } from 'lucide-react'
 import Button from '../components/Button'
 import DescTitle from '../components/DescTitle'
 import { HeartPlus, MessageCircleMore, PaintbrushVertical } from "lucide-react"
@@ -14,9 +14,9 @@ const HomePage = () => {
     const [tabsCoursesSort, setTabsCoursesSort] = useState('All')
 
     const getData = () => {
-        if(tabsCoursesSort == 'All') {
+        if (tabsCoursesSort == 'All') {
             return Object.keys(CoursesData.Courses).flatMap(item => {
-                if(item == 'Marketing') {
+                if (item == 'Marketing') {
                     return CoursesData.Courses[item]
                 }
 
@@ -66,6 +66,7 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
+                <img className='absolute bottom-0 left-0' src="/public/images/cloud-shap-img1.png" alt="" />
             </section>
             <section className='relative'>
                 <img src="/public/images/element-01.png" alt="" className='absolute top-[20%] left-[5%] circle' />
@@ -103,10 +104,10 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
-            <section className='relative bg-[#F1F8FD]'>
-                <img src="/public/images/element-06.png" alt="" className='absolute top-[20%] right-[20%] line' width={120} />
+            <section className='relative bg-[#F1F8FD] pt-80 pb-80'>
+                <img src="/public/images/element-06.png" alt="" className='absolute top-[20%] right-[20%] line z-50' width={120} />
                 <img src="/public/images/element-03.png" alt="" className='absolute bottom-0 right-[10%] z-40 triangle' />
-                <div className="container mx-auto px-3">
+                <div className="relative container mx-auto px-3 z-20">
                     <h2 className='text-2xl font-bold'>Explore 5,000+ Free Online Courses For Students</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non enim fugiat praesentium at unde? Harum itaque blanditiis cupiditate libero exercitationem?</p>
                     <div className="relative grid grid-cols-4 gap-x-5 mt-10 z-50">
@@ -121,8 +122,10 @@ const HomePage = () => {
                         ))}
                     </div>
                 </div>
+                <img className='absolute top-0 left-0' src="/public/images/cloud-shap-img2.png" alt="" />
+                <img className='absolute bottom-0 left-0' src="/public/images/cloud-shap-img1.png" alt="" />
             </section>
-            <section className='relative'>
+            <section className='relative pb-5'>
                 <div className="container mx-auto px-3">
                     <div className="grid grid-cols-4 gap-x-5">
                         {dataList.map(item => (
@@ -135,8 +138,8 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
-            <section className='relative bg-[#F1F8FD]'>
-                <div className="container mx-auto px-3">
+            <section className='relative bg-[#F1F8FD] pt-80 pb-80'>
+                <div className="relative container mx-auto px-3 z-40">
                     <div className="grid grid-cols-2 gap-x-10">
                         <h2 className='text-2xl font-bold'>Explore 4,000+ Free Online Courses <br /> For Students</h2>
                         <div className="">
@@ -150,11 +153,13 @@ const HomePage = () => {
                         })}
                     </div>
                     <div className="relative grid grid-cols-4 gap-x-5 mt-5 z-40">
-                      {sortList.slice(0, 4).map(item => {
-                        return <CardCourses {...item} />
-                      })}
+                        {sortList.slice(0, 4).map(item => {
+                            return <CardCourses {...item} />
+                        })}
                     </div>
                 </div>
+                <img className='absolute top-0 left-0' src="/public/images/cloud-shap-img2.png" alt="" />
+                <img className='absolute bottom-0 left-0' src="/public/images/cloud-shap-img1.png" alt="" />
             </section>
             <section className=''>
                 <div className="container mx-auto px-3">
@@ -183,15 +188,31 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
-            <section className='bg-bg-section'>
-                <div className="container mx-auto px-3">
-                      <DescTitle position={'justify-center'}>Articles</DescTitle>
-                      <h2 className='text-2xl font-bold text-center'>Recent Articles For Students</h2>
-                      <div className="grid grid-cols-4 gap-x-5">
+            <section className='relative bg-bg-section pt-80 pb-60'>
+                <div className="relative container mx-auto px-3 z-40">
+                    <DescTitle position={'justify-center'}>Articles</DescTitle>
+                    <h2 className='text-2xl font-bold text-center'>Recent Articles For Students</h2>
+                    <div className="grid grid-cols-4 gap-x-5 mt-6">
                         {blogList.map(item => (
                             <BlogCard {...item} />
                         ))}
-                      </div>
+                    </div>
+                </div>
+                <img className='absolute top-0 left-0' src="/public/images/cloud-shap-img2.png" alt="" />
+                <img className='absolute bottom-0 left-0' src="/public/images/cloud-shap-img1.png" alt="" />
+            </section>
+            <section className='pt-20'>
+                <div className="container mx-auto px-3 bg-accent rounded-2xl">
+                    <div className="grid grid-cols-2 items-center">
+                        <div className="text-white space-y-4 pl-10">
+                            <span className='flex items-center gap-x-3 text-white'><BookOpen />Get Sertificate</span>
+                            <div className="text-3xl font-bold">Get Quality Skills Certificate From <br /> the StudIQ</div>
+                            <button className='bg-white py-3 px-6 rounded-full cursor-pointer text-accent'>Get started now</button>
+                        </div>
+                        <div className="flex justify-end pr-10">
+                            <img src='/public/images/certificate-img.png' width={300} className='-mt-20' alt="" />
+                        </div>
+                    </div>
                 </div>
             </section>
         </>

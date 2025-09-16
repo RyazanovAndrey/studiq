@@ -5,7 +5,7 @@ import Button from './Button'
 
 const CardCourses = ({ title, CourseImage, lessons, level, rating, instructor, price }) => {
     return (
-        <div className='bg-white rounded-2xl overflow-hidden'>
+        <div className='bg-white rounded-2xl overflow-hidden shadow-card'>
             <div className="h-[200px] overflow-hidden">
                 <img src={`/public/courses/${CourseImage}`} alt="" className='object-cover' />
             </div>

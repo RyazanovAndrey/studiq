@@ -10,7 +10,9 @@
   --color-bg-section: #F1F8FD;
 
   --font-main: 'Inter';
-  --font-title: 'Kanit'
+  --font-title: 'Kanit';
+
+  --shadow-card: 0 0 20px #dddddd;
 }
 
 body {

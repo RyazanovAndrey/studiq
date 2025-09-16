@@ -16,7 +16,7 @@ const BlogCard = ({ image, title, category, date, desc }) => {
   const colorItem = colorCategoty()
 
   return (
-    <div className='rounded-2xl overflow-hidden bg-white'>
+    <div className='rounded-2xl overflow-hidden bg-white shadow-card cursor-pointer'>
       <img src={image} alt="" />
       <div className="p-5">
         <div className="space-y-2">
