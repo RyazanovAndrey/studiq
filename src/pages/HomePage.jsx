@@ -1,33 +1,14 @@
-import { BookOpen, CheckCheck, GraduationCap, ThumbsUp, Users, UserStar, Video } from 'lucide-react'
+import { CheckCheck, GraduationCap, ThumbsUp, Users, UserStar, Video } from 'lucide-react'
 import Button from '../components/Button'
 import DescTitle from '../components/DescTitle'
 import { HeartPlus, MessageCircleMore, PaintbrushVertical } from "lucide-react"
 import { Link } from 'react-router'
-import { useState } from 'react'
-import CoursesData from '../dataCourses.json'
-import CardCourses from '../components/CardCourses'
 import { blogList } from '../data.js'
 import BlogCard from '../components/BlogCard'
+import Girl from '../sections/Girl.jsx'
+import CoursesList from '../sections/CoursesList.jsx'
 
 const HomePage = () => {
-
-    const [tabsCoursesSort, setTabsCoursesSort] = useState('All')
-
-    const getData = () => {
-        if (tabsCoursesSort == 'All') {
-            return Object.keys(CoursesData.Courses).flatMap(item => {
-                if (item == 'Marketing') {
-                    return CoursesData.Courses[item]
-                }
-
-                return CoursesData.Courses[item]
-            })
-        }
-
-        return CoursesData.Courses[tabsCoursesSort]
-    }
-
-    const sortList = getData()
 
     const exploreList = [
         { image: <MessageCircleMore size={48} strokeWidth={1.5} />, title: 'Language Learning', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, vitae.' },
@@ -42,8 +23,6 @@ const HomePage = () => {
         { image: <ThumbsUp color='#B58B77' size={36} strokeWidth={1.5} />, title: '2.5K', desc: 'Satisfaction Rate', color: 'card-orange ' },
         { image: <UserStar color='#C8DEF3' size={36} strokeWidth={1.5} />, title: '5K', desc: 'Students Communyty', color: 'card-blue' },
     ]
-
-    const tabsCourses = ['All', 'Marketing', 'Academic', 'WebDesign', 'Programming', 'Design']
 
     return (
         <>
@@ -147,16 +126,7 @@ const HomePage = () => {
                             <Link className='text-accent'>See All Courses</Link>
                         </div>
                     </div>
-                    <div className="bg-white mt-5 rounded-2xl flex p-5 gap-x-3">
-                        {tabsCourses.map(item => {
-                            return <p onClick={() => setTabsCoursesSort(item)} className={`cursor-pointer bg-[#F3F7FD] p-3 rounded-full px-6 ${tabsCoursesSort == item ? 'bg-accent text-white' : ''}`}>{item}</p>
-                        })}
-                    </div>
-                    <div className="relative grid grid-cols-4 gap-x-5 mt-5 z-40">
-                        {sortList.slice(0, 4).map(item => {
-                            return <CardCourses {...item} />
-                        })}
-                    </div>
+                    <CoursesList count='4' />
                 </div>
                 <img className='absolute top-0 left-0' src="/public/images/cloud-shap-img2.png" alt="" />
                 <img className='absolute bottom-0 left-0' src="/public/images/cloud-shap-img1.png" alt="" />
@@ -201,20 +171,7 @@ const HomePage = () => {
                 <img className='absolute top-0 left-0' src="/public/images/cloud-shap-img2.png" alt="" />
                 <img className='absolute bottom-0 left-0' src="/public/images/cloud-shap-img1.png" alt="" />
             </section>
-            <section className='pt-20'>
-                <div className="container mx-auto px-3 bg-accent rounded-2xl">
-                    <div className="grid grid-cols-2 items-center">
-                        <div className="text-white space-y-4 pl-10">
-                            <span className='flex items-center gap-x-3 text-white'><BookOpen />Get Sertificate</span>
-                            <div className="text-3xl font-bold">Get Quality Skills Certificate From <br /> the StudIQ</div>
-                            <button className='bg-white py-3 px-6 rounded-full cursor-pointer text-accent'>Get started now</button>
-                        </div>
-                        <div className="flex justify-end pr-10">
-                            <img src='/public/images/certificate-img.png' width={300} className='-mt-20' alt="" />
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Girl />
         </>
     )
 }

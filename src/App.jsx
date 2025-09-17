@@ -3,6 +3,7 @@ import { Route, Routes, useLocation } from 'react-router'
 import Layout from './components/Layout'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/aboutPage'
+import CoursesPage from './pages/CoursesPage'
 
 const App = () => {
 
@@ -25,6 +26,7 @@ const App = () => {
         <Route element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path='about' element={<AboutPage />} />
+          <Route path='courses' element={<CoursesPage />} />
         </Route>
       </Routes>
     </>
