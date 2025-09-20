@@ -4,6 +4,7 @@ import Layout from './components/Layout'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/aboutPage'
 import CoursesPage from './pages/CoursesPage'
+import BlogPage from './pages/BlogPage'
 
 const App = () => {
 
@@ -27,6 +28,7 @@ const App = () => {
           <Route index element={<HomePage />} />
           <Route path='about' element={<AboutPage />} />
           <Route path='courses' element={<CoursesPage />} />
+          <Route path='blog' element={<BlogPage />} />
         </Route>
       </Routes>
     </>
