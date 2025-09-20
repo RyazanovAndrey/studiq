@@ -12,7 +12,7 @@ const Girl = () => {
                         <button className='bg-white py-3 px-6 rounded-full cursor-pointer text-accent'>Get started now</button>
                     </div>
                     <div className="flex justify-end pr-10">
-                        <img src='/public/images/certificate-img.png' width={300} className='-mt-20' alt="" />
+                        <img src='/images/certificate-img.png' width={300} className='-mt-20' alt="" />
                     </div>
                 </div>
             </div>

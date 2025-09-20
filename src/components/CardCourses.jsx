@@ -7,7 +7,7 @@ const CardCourses = ({ title, CourseImage, lessons, level, rating, instructor, p
     return (
         <div className='bg-white rounded-2xl overflow-hidden shadow-card'>
             <div className="h-[200px] overflow-hidden">
-                <img src={`/public/courses/${CourseImage}`} alt="" className='object-cover' />
+                <img src={`/courses/${CourseImage}`} alt="" className='object-cover' />
             </div>
             <div className="p-5 space-y-2">
                 <div className="font-bold">{title}</div>

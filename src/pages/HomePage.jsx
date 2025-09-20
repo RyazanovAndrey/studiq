@@ -27,11 +27,11 @@ const HomePage = () => {
     return (
         <>
             <section className='relative min-h-[800px] bg-[url(/images/hero-bg.png)] bg-cover flex items-center'>
-                <img src="/public/images/element-01.png" alt="" className='absolute top-[20%] left-[10%] circle' />
-                <img src="/public/images/element-02.png" alt="" className='absolute top-[40%] left-[10%] line' width={70} />
-                <img src="/public/images/element-06.png" alt="" className='absolute top-[20%] right-[20%] line' width={100} />
-                <img src="/public/images/element-03.png" alt="" className='absolute bottom-0 right-[10%] z-40 triangle' />
-                <img src="/public/images/element-04.png" alt="" className='absolute bottom-30 right-20 z-40 triangle triangle' />
+                <img src="/images/element-01.png" alt="" className='absolute top-[20%] left-[10%] circle' />
+                <img src="/images/element-02.png" alt="" className='absolute top-[40%] left-[10%] line' width={70} />
+                <img src="/images/element-06.png" alt="" className='absolute top-[20%] right-[20%] line' width={100} />
+                <img src="/images/element-03.png" alt="" className='absolute bottom-0 right-[10%] z-40 triangle' />
+                <img src="/images/element-04.png" alt="" className='absolute bottom-30 right-20 z-40 triangle triangle' />
                 <div className="container mx-auto px-3 flex justify-center">
                     <div className="w-5xl text-center space-y-5 z-10">
                         <DescTitle position={'justify-center'}>Your Future, Achieve Success</DescTitle>
@@ -45,10 +45,10 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
-                <img className='absolute bottom-0 left-0' src="/public/images/cloud-shap-img1.png" alt="" />
+                <img className='absolute bottom-0 left-0' src="/images/cloud-shap-img1.png" alt="" />
             </section>
             <section className='relative'>
-                <img src="/public/images/element-01.png" alt="" className='absolute top-[20%] left-[5%] circle' />
+                <img src="/images/element-01.png" alt="" className='absolute top-[20%] left-[5%] circle' />
                 <div className="container mx-auto px-3 grid grid-cols-2 gap-x-10 items-center bg-white">
                     <div className="space-y-6 z-10">
                         <DescTitle position={'justify-start'} >About StudIQ</DescTitle>
@@ -84,8 +84,8 @@ const HomePage = () => {
                 </div>
             </section>
             <section className='relative bg-[#F1F8FD] pt-80 pb-80'>
-                <img src="/public/images/element-06.png" alt="" className='absolute top-[20%] right-[20%] line z-50' width={120} />
-                <img src="/public/images/element-03.png" alt="" className='absolute bottom-0 right-[10%] z-40 triangle' />
+                <img src="/images/element-06.png" alt="" className='absolute top-[20%] right-[20%] line z-50' width={120} />
+                <img src="/images/element-03.png" alt="" className='absolute bottom-0 right-[10%] z-40 triangle' />
                 <div className="relative container mx-auto px-3 z-20">
                     <h2 className='text-2xl font-bold'>Explore 5,000+ Free Online Courses For Students</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non enim fugiat praesentium at unde? Harum itaque blanditiis cupiditate libero exercitationem?</p>
@@ -101,8 +101,8 @@ const HomePage = () => {
                         ))}
                     </div>
                 </div>
-                <img className='absolute top-0 left-0' src="/public/images/cloud-shap-img2.png" alt="" />
-                <img className='absolute bottom-0 left-0' src="/public/images/cloud-shap-img1.png" alt="" />
+                <img className='absolute top-0 left-0' src="/images/cloud-shap-img2.png" alt="" />
+                <img className='absolute bottom-0 left-0' src="/images/cloud-shap-img1.png" alt="" />
             </section>
             <section className='relative pb-5'>
                 <div className="container mx-auto px-3">
@@ -128,13 +128,13 @@ const HomePage = () => {
                     </div>
                     <CoursesList count='4' />
                 </div>
-                <img className='absolute top-0 left-0' src="/public/images/cloud-shap-img2.png" alt="" />
-                <img className='absolute bottom-0 left-0' src="/public/images/cloud-shap-img1.png" alt="" />
+                <img className='absolute top-0 left-0' src="/images/cloud-shap-img2.png" alt="" />
+                <img className='absolute bottom-0 left-0' src="/images/cloud-shap-img1.png" alt="" />
             </section>
             <section className=''>
                 <div className="container mx-auto px-3">
                     <div className="grid grid-cols-2 gap-x-10">
-                        <img src="/public/images/why-choose-us-image.jpg" alt="" width={650} />
+                        <img src="/images/why-choose-us-image.jpg" alt="" width={650} />
                         <div className="flex items-center">
                             <div className="space-y-5">
                                 <DescTitle>Why Choose Us</DescTitle>
@@ -168,8 +168,8 @@ const HomePage = () => {
                         ))}
                     </div>
                 </div>
-                <img className='absolute top-0 left-0' src="/public/images/cloud-shap-img2.png" alt="" />
-                <img className='absolute bottom-0 left-0' src="/public/images/cloud-shap-img1.png" alt="" />
+                <img className='absolute top-0 left-0' src="/images/cloud-shap-img2.png" alt="" />
+                <img className='absolute bottom-0 left-0' src="/images/cloud-shap-img1.png" alt="" />
             </section>
             <Girl />
         </>

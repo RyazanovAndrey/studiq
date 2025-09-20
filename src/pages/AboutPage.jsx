@@ -1,5 +1,4 @@
 import { Backpack, BadgeCheck, Clock, Command, GalleryHorizontalEnd, GraduationCap, NotebookTabs, StickyNote, ToolCase, Users, Video } from 'lucide-react'
-import React from 'react'
 import { Link } from 'react-router'
 import DescTitle from '../components/DescTitle'
 import Girl from '../sections/Girl'
@@ -75,7 +74,7 @@ const AboutPage = () => {
         <div className="container mx-auto px-3">
           <div className="grid grid-cols-2 gap-x-5">
             <div className="h-[300px] overflow-hidden rounded-2xl">
-              <img src="../../public/images/about-img.png" alt="" />
+              <img src="/images/about-img.png" alt="" />
             </div>
             <div className="space-y-6">
               <DescTitle>Why choose us</DescTitle>
